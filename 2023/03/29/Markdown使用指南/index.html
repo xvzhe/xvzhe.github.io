@@ -6,21 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://xvzhe.cn">
-  <title>数字设计和计算机体系结构-第0章-绪言 | 沉入蓝色的遗忘，我的小舟如今悠闲地停泊。</title>
+  <title>Markdown使用指南 | 沉入蓝色的遗忘，我的小舟如今悠闲地停泊。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第0章 绪言0.1 课程计划 课程目标：我们将学习如何设计和构造一个属于自己的微处理器。 本书结构：  从基于0和1的数字系统的设计开始，  研究如何利用逻辑门构成加法器、存储器等比较复杂的模块，  随后我们学习使用微处理器的语言（汇编语言）进行程序设计。  最后我们综合上述内容，构造一个能执行汇编程序的微处理器。0.2 控制复杂性的艺术 抽象：隐藏不重要的细节 电子计算机的抽象层次： 物理层：最">
+  <meta name="description" content="Markdown入门指南目录  〇、前言 一、什么是Markdown 二、Markdown优点 三、Markdown基本语法 3.1 标题 3.2 字体 3.3 引用 3.4 列表 3.5 代码块 3.6 分割线 3.7 删除线 3.8 下划线     〇、前言大家好，我是xz。我最近在学习如何搭建博客的过程中，了解到Markdown用于书写博客的轻便简洁的工具，故在此记录我的学习过程。 －－－">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数字设计和计算机体系结构-第0章-绪言">
-<meta property="og:url" content="http://xvzhe.cn/2023/03/29/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/index.html">
+<meta property="og:title" content="Markdown使用指南">
+<meta property="og:url" content="http://xvzhe.cn/2023/03/29/Markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/index.html">
 <meta property="og:site_name" content="沉入蓝色的遗忘，我的小舟如今悠闲地停泊。">
-<meta property="og:description" content="第0章 绪言0.1 课程计划 课程目标：我们将学习如何设计和构造一个属于自己的微处理器。 本书结构：  从基于0和1的数字系统的设计开始，  研究如何利用逻辑门构成加法器、存储器等比较复杂的模块，  随后我们学习使用微处理器的语言（汇编语言）进行程序设计。  最后我们综合上述内容，构造一个能执行汇编程序的微处理器。0.2 控制复杂性的艺术 抽象：隐藏不重要的细节 电子计算机的抽象层次： 物理层：最">
+<meta property="og:description" content="Markdown入门指南目录  〇、前言 一、什么是Markdown 二、Markdown优点 三、Markdown基本语法 3.1 标题 3.2 字体 3.3 引用 3.4 列表 3.5 代码块 3.6 分割线 3.7 删除线 3.8 下划线     〇、前言大家好，我是xz。我最近在学习如何搭建博客的过程中，了解到Markdown用于书写博客的轻便简洁的工具，故在此记录我的学习过程。 －－－">
 <meta property="og:locale">
-<meta property="og:image" content="http://xvzhe.cn/2023/03/29/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8A%BD%E8%B1%A1%E5%B1%82%E6%AC%A1.jpg">
-<meta property="article:published_time" content="2023-03-28T16:16:44.000Z">
-<meta property="article:modified_time" content="2023-03-28T17:19:02.870Z">
+<meta property="article:published_time" content="2023-03-29T01:15:34.000Z">
+<meta property="article:modified_time" content="2023-03-29T01:17:05.387Z">
 <meta property="article:author" content="徐哲">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://xvzhe.cn/2023/03/29/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8A%BD%E8%B1%A1%E5%B1%82%E6%AC%A1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="沉入蓝色的遗忘，我的小舟如今悠闲地停泊。" type="application/atom+xml">
   
@@ -156,46 +154,156 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-数字设计和计算机体系结构" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Markdown使用指南" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      数字设计和计算机体系结构-第0章-绪言
+      Markdown使用指南
     </h1>
   
 
         
-        <a href="/2023/03/29/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" class="archive-article-date">
-  	<time datetime="2023-03-28T16:16:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-03-29</time>
+        <a href="/2023/03/29/Markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="archive-article-date">
+  	<time datetime="2023-03-29T01:15:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-03-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="第0章-绪言"><a href="#第0章-绪言" class="headerlink" title="第0章 绪言"></a>第0章 绪言</h1><h2 id="0-1-课程计划"><a href="#0-1-课程计划" class="headerlink" title="0.1 课程计划"></a>0.1 课程计划</h2><ul>
-<li>课程目标：我们将学习如何设计和构造一个属于自己的微处理器。</li>
-<li>本书结构：<br>  从基于0和1的数字系统的设计开始，<br>  研究如何利用逻辑门构成加法器、存储器等比较复杂的模块，<br>  随后我们学习使用微处理器的语言（汇编语言）进行程序设计。<br>  最后我们综合上述内容，构造一个能执行汇编程序的微处理器。<h2 id="0-2-控制复杂性的艺术"><a href="#0-2-控制复杂性的艺术" class="headerlink" title="0.2 控制复杂性的艺术"></a>0.2 控制复杂性的艺术</h2></li>
-<li>抽象：隐藏不重要的细节</li>
-<li>电子计算机的抽象层次：<img src="%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%8A%BD%E8%B1%A1%E5%B1%82%E6%AC%A1.jpg"><ol>
-<li>物理层：最底层抽象，即电子的运动。</li>
-<li>器件：系统由晶体管等电子器件构成</li>
-<li>模拟电路：器件组合构造出放大器等组件</li>
-<li>数字电路：逻辑门等将电压控制在离散的范围内</li>
-<li>逻辑设计：将数字电路构造更复杂的结构（加法器）</li>
-<li>微体系结构：连接逻辑和体系结构层次。（微体系结构将逻辑组合去实现体系结构中定义的指令。一个特定的体系结构可以有不同的微结构实现方式）</li>
-<li>体系结构：描述了程序员观点的计算机抽象（Intel x86体系结构定义了一套指令系统和寄存器）</li>
-<li>操作系统：负责处理底层的抽象（访问硬盘，管理存储器）</li>
-<li>应用软件：使用操作系统提供的功能解决问题。</li>
-</ol>
-</li>
-<li>本书主要讨论数字电路到体系结构之间的层次</li>
-<li>约束：是对设计选择的内在限制，通过限制可以更有效地在更高的抽象层次上工作</li>
-<li>3Y原则：层次化，模块化，规整化</li>
+        <h1 id="Markdown入门指南"><a href="#Markdown入门指南" class="headerlink" title="Markdown入门指南"></a>Markdown入门指南</h1><p>目录</p>
+<ul>
+<li>〇、前言</li>
+<li>一、什么是Markdown</li>
+<li>二、Markdown优点</li>
+<li>三、Markdown基本语法<ul>
+<li>3.1 标题</li>
+<li>3.2 字体</li>
+<li>3.3 引用</li>
+<li>3.4 列表</li>
+<li>3.5 代码块</li>
+<li>3.6 分割线</li>
+<li>3.7 删除线</li>
+<li>3.8 下划线</li>
 </ul>
+</li>
+</ul>
+<hr>
+<h2 id="〇、前言"><a href="#〇、前言" class="headerlink" title="〇、前言"></a>〇、前言</h2><p>大家好，我是xz。我最近在学习如何搭建博客的过程中，了解到Markdown用于书写博客的轻便简洁的工具，故在此记录我的学习过程。</p>
+<p>－－－</p>
+<h2 id="一、Markdown是什么"><a href="#一、Markdown是什么" class="headerlink" title="一、Markdown是什么"></a>一、Markdown是什么</h2><p><code>Markdown</code>是一种可以使用文本编辑器编写的轻量级标记语言。<br>通过简单的标记语法，它可以使普通文本内容具有一定格式。可以导出<code>PPT、LaTex、HTML、Word、PDF、Epub、JPG</code>等多种格式的文档，文档后缀.md。</p>
+<p>－－－</p>
+<h2 id="二、-Markdown优点"><a href="#二、-Markdown优点" class="headerlink" title="二、    Markdown优点"></a>二、    Markdown优点</h2><ul>
+<li>纯文本编辑</li>
+<li>支持跨平台同步数据</li>
+<li>支持插入图片、视频等</li>
+<li>随时修改，不用担心word等工具出现排版错误</li>
+</ul>
+<p>－－－</p>
+<h2 id="三、Markdown基本语法"><a href="#三、Markdown基本语法" class="headerlink" title="三、Markdown基本语法"></a>三、Markdown基本语法</h2><pre><code>### 3.1 标题
+</code></pre>
+<p>使用#可以表示1-6级标题。<br>代码如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line"><span class="section">##### 五级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><blockquote>
+<p><code>注意</code>：<br>    + 最后一个#与标题中间留空格<br>    + 标题应该置于行首</p>
+</blockquote>
+<pre><code>### 3.2 字体
+</code></pre>
+<p>星号<code>*</code>与下划线<code>_</code>都可以。</p>
+<blockquote>
+<p>单数是斜体，双数是粗体，三是粗斜体</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">代码</th>
+<th align="left">效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单是斜体</td>
+<td align="left"><em>单是斜体</em></td>
+</tr>
+<tr>
+<td align="left">双是粗体</td>
+<td align="left"><strong>双是粗体</strong></td>
+</tr>
+<tr>
+<td align="left">三是粗斜体</td>
+<td align="left"><em><strong>三是粗斜体</strong></em></td>
+</tr>
+</tbody></table>
+<pre><code>### 3.3 引用
+</code></pre>
+<p>Markdown中引用由<code>&gt;</code>实现，<code>&gt;</code>后的空格可有可无。<br>在引用的区块中，允许换行存在。结束引用需要一行空白行。<br>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是一个引用</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<blockquote>
+<p>这是一个引用</p>
+</blockquote>
+<p>此外引用还可以嵌套使用</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是我的博客</span><br><span class="line">&gt;&gt;欢迎大家相互学习交流</span><br><span class="line">&gt;&gt;&gt;【Markdown】</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这是我的博客</p>
+<blockquote>
+<p>欢迎大家相互学习交流</p>
+<blockquote>
+<p>【Markdown】</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>### 3.4 列表
+</code></pre>
+<p>列表也就是分小点，分为有序列表和无序列表。<br>    + 无序列表，使用<code>*</code>、<code>+</code>、<code>-</code>，后面再<code>加一个空格</code>作为列表的标记<br>    + 有序列表，使用数字并加上<code>.</code>号，后面再<code>加一个空格</code>作为列表的标记<br>同样，列表也可以嵌套<br>代码：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*</span> 无序列表1</span><br><span class="line"><span class="bullet">+</span> 无序列表2</span><br><span class="line"><span class="bullet">-</span> 无序列表3</span><br><span class="line"><span class="bullet">	*</span> 无序列表3.1</span><br><span class="line"><span class="bullet">	*</span> 无序列表3.2</span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span></span><br><span class="line">	1.1</span><br><span class="line"><span class="bullet">2.</span></span><br><span class="line">	2.1</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<ul>
+<li>无序列表1</li>
+</ul>
+<ul>
+<li>无序列表2</li>
+</ul>
+<ul>
+<li>无序列表3<ul>
+<li>无序列表3.1</li>
+<li>无序列表3.2</li>
+</ul>
+</li>
+</ul>
+<p>1.<br>    1.1<br>2.<br>    2.1</p>
+<pre><code>### 3.5 代码块
+</code></pre>
+<ul>
+<li><p>行内引用代码。用反引号``</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int <span class="code">`main`</span></span><br></pre></td></tr></table></figure>
+<p>&lt;int  <code>main</code></p>
+</li>
+<li><p>块内引用代码。三个反引号```后接代码所用语言。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">\*</span><br><span class="line">FileName:HelloWorld.cpp</span><br><span class="line">```cpp</span><br><span class="line">*\</span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Hello world!&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">\\```</span><br></pre></td></tr></table></figure>
+<p>&lt;支持以下语言：<br>bash<br>c,cpp,cs,css<br>…</p>
+<h3 id="3-6-分割线"><a href="#3-6-分割线" class="headerlink" title="3.6 分割线"></a>3.6 分割线</h3><p>三个<code>-</code>或者<code>*</code>建立分割线，同时需要在分割线上空一行。<br>代码</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Hello world!</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"><span class="section">This is my blog!</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+<p>效果：<br>Hello world!</p>
+</li>
+</ul>
+<hr>
+<h2 id="This-is-my-blog"><a href="#This-is-my-blog" class="headerlink" title="This is my blog!"></a>This is my blog!</h2><pre><code>### 3.7 删除线
+</code></pre>
+<p>前后各使用~~</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~该内容被删除~~</span><br></pre></td></tr></table></figure>
+<p><del>该内容被删除</del></p>
+<pre><code>### 3.8 下划线
+</code></pre>
+<p>在文字的首部和尾部<code>&lt;u&gt;文本&lt;/u&gt;</code></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>文本<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p><u>文本</u></p>
+<pre><code>### 3.9 表格
+</code></pre>
+<p>用<code>|</code>分隔单元格，用<code>-</code>分隔表头和其他行。<br>调整表格的左对齐、右对齐、居中对齐：<br>    + :-<br>    + -:<br>    + -:-</p>
 
       
 
@@ -275,7 +383,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://xvzhe.cn/2023/03/29/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://xvzhe.cn/2023/03/29/Markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,18 +397,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2023/03/29/Markdown%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Markdown使用指南
-        
-      </div>
-    </a>
   
-  
-    <a href="/2023/03/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2023/03/29/%E6%95%B0%E5%AD%97%E8%AE%BE%E8%AE%A1%E5%92%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数字设计和计算机体系结构-第0章-绪言</div>
       <i class="icon-circle-right"></i>
     </a>
   
